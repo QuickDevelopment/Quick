@@ -1,6 +1,12 @@
 {
     "name": "quickdevelopment/quick",
     "type": "library",
+    "authors": [
+        {
+            "name": "Keagan Mulder",
+            "email": "keaganmulder1@gmail.com"
+        }
+    ],
     "description": "The skeleton application for the Laravel framework.",
     "keywords": ["laravel", "framework"],
     "license": "MIT",
@@ -22,10 +28,8 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\": "app/",
-            "Database\\Factories\\": "database/factories/",
-            "Database\\Seeders\\": "database/seeders/",
-            "QuickDevelopment\\Quick\\": "src/Providers/"
+            "QuickDevelopment\\Quick\\": "src/",
+            "App\\": "app/"
         }
     },
     "autoload-dev": {
@@ -50,9 +54,6 @@
     },
     "extra": {
         "laravel": {
-            "providers": [
-                "QuickDevelopment\\Quick\\"
-            ],
             "dont-discover": []
         }
     },

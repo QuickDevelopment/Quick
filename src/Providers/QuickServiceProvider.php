@@ -19,8 +19,11 @@ class QuickServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        $this->loadViewsFrom(__DIR__."../../resources/views", 'quick');
-        $this->publishes([__DIR__."../../resources/views"], 'quick-view');
-        $this->loadRoutesFrom(__DIR__."../../routes");
+        $this->loadViewsFrom(__DIR__.'/../../resources/views', 'quick');
+
+        $this->publishes([
+            __DIR__.'/../../resources/views' => resource_path('views/vendor/quick'),
+        ], 'quick-views');
+        $this->loadRoutesFrom(__DIR__.'/../../routes/web.php');
     }
 }
