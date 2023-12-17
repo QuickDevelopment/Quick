@@ -172,6 +172,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         EventServiceProvider::class,
         RouteServiceProvider::class,
+        \QuickDevelopment\Quick\Providers\QuickServiceProvider::class
     ])->toArray(),
 
     /*
